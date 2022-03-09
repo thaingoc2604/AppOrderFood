@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ThongTinCaNhanActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:background="#E3DADA"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#2196F3"
+                android:id="@+id/toolbarThemMon">
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/size_25dp"
+                android:textColor="#F40101"
+                android:textStyle="bold"
+                android:text="THÔNG TIN CÁ NHÂN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TableLayout
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+
+                    <TextView
+
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_50dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:text="Họ Tên: "
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textviewHoTen"
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_50dp"
+                        android:layout_weight="5"
+                        android:paddingLeft="10sp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_50dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:text="Username: "
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textviewTenDangNhap"
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_50dp"
+                        android:layout_weight="5"
+                        android:paddingLeft="10sp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        />
+
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

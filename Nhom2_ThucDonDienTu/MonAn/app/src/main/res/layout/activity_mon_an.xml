@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MonAnActivity">
+
+
+   <androidx.drawerlayout.widget.DrawerLayout
+       android:id="@+id/drawerLayout"
+       android:background="#E3DADA"
+       android:fitsSystemWindows="true"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <LinearLayout
+
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <androidx.appcompat.widget.Toolbar
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:background="#2196F3"
+             android:id="@+id/toolbar">
+         </androidx.appcompat.widget.Toolbar>
+
+         <TextView
+             android:background="@color/white"
+             android:gravity="center"
+             android:textSize="@dimen/size_20sp"
+             android:textColor="#F30C0C"
+             android:textStyle="bold"
+             android:text="@string/txt_monan"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"></TextView>
+
+         <LinearLayout
+             android:background="@color/white"
+             android:layout_marginTop="@dimen/size_20dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listviewMonAn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"/>
+         </LinearLayout>
+      </LinearLayout>
+
+      <com.google.android.material.navigation.NavigationView
+          app:menu="@menu/bottom_navigation_menu"
+          app:headerLayout="@layout/header_navigation_menu"
+          android:layout_gravity="start"
+          android:fitsSystemWindows="true"
+          android:id="@+id/navigationView"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent">
+      </com.google.android.material.navigation.NavigationView>
+   </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>

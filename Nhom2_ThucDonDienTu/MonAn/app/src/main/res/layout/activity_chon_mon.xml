@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChonMonActivity">
+
+     <androidx.drawerlayout.widget.DrawerLayout
+       android:id="@+id/drawerLayout"
+       android:background="#E3DADA"
+       android:fitsSystemWindows="true"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <LinearLayout
+
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#2196F3"
+                android:id="@+id/toolbarChonMon">
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageviewHinhMon"
+            android:layout_gravity="center"
+            android:src="@drawable/food"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_250dp">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="@dimen/size_25dp"
+            android:id="@+id/textviewTenMonAn"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:textSize="@dimen/size_30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/txt_ten"
+            android:layout_width="@dimen/size_250dp"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/textviewGia"
+            android:textSize="@dimen/size_30sp"
+            android:textColor="#BD0F0F"
+            android:textStyle="bold"
+            android:text="@string/txt_gia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonGiamSoLuong"
+            android:layout_marginTop="@dimen/size_30dp"
+            android:layout_marginLeft="@dimen/size_50dp"
+            android:backgroundTint="#CD8383"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_25sp"
+            android:text="@string/btn_giam"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></Button>
+
+        <TextView
+            android:id="@+id/textviewSoLuong"
+            android:gravity="center"
+            android:backgroundTint="@color/purple_200"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="@dimen/size_40dp"
+            android:layout_marginLeft="@dimen/size_35dp"
+            android:textSize="@dimen/size_35sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/txt_soluong"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="match_parent"></TextView>
+
+        <Button
+            android:id="@+id/buttonTangSoLuong"
+            android:layout_marginTop="@dimen/size_30dp"
+            android:layout_marginLeft="@dimen/size_35dp"
+            android:backgroundTint="#C61111"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_35sp"
+            android:text="@string/btn_tang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="@dimen/size_15dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:text="@string/txt_tongtien"
+            android:textSize="@dimen/size_30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textviewTongTien"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_35sp"
+            android:layout_marginLeft="@dimen/size_100dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:textColor="#AE0A0A"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+          <LinearLayout
+              android:layout_marginTop="@dimen/size_35dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_marginLeft="@dimen/size_15dp"
+                  android:layout_marginTop="@dimen/size_10dp"
+                  android:textColor="@color/black"
+                  android:text="Chọn Bàn :"
+                  android:textSize="@dimen/size_30sp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent">
+              </TextView>
+
+              <Spinner
+                  android:layout_marginLeft="@dimen/size_15dp"
+                  android:layout_marginTop="@dimen/size_5dp"
+                  android:id="@+id/spinner"
+                  android:layout_width="wrap_content"
+                  android:layout_height="50dp"
+                  android:layout_gravity="center_vertical|center_horizontal"
+                  android:layout_weight="1"
+                  android:gravity="center" />
+
+          </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonChonMonAn"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/size_10dp"
+            android:backgroundTint="#AE0A0A"
+            android:text="@string/btn_chon"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"></Button>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+ </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

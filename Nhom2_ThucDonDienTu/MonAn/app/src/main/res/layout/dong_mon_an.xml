@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/size_10dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewHinh"
+        android:layout_width="@dimen/size_100dp"
+        android:layout_height="@dimen/size_100dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textviewTenMonAnCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:layout_toRightOf="@id/imageViewHinh"
+        android:text="@string/tenmonan"
+        android:textColor="#0d00ff"
+        android:textSize="@dimen/size_24sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/textviewGiaCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewTenMonAnCustom"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:layout_toRightOf="@id/imageViewHinh"
+        android:text="@string/giatien"
+        android:textColor="#539308"
+        android:textSize="@dimen/size_24sp"
+        android:textStyle="bold"></TextView>
+
+
+    <ImageView
+        android:id="@+id/imageviewEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:src="@android:drawable/ic_menu_edit"></ImageView>
+
+    <ImageView
+        android:id="@+id/imageviewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:layout_toLeftOf="@+id/imageviewEdit"
+        android:src="@android:drawable/ic_delete"></ImageView>
+
+</RelativeLayout>

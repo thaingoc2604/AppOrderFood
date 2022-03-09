@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddMonAnActivity">
+
+   <androidx.drawerlayout.widget.DrawerLayout
+       android:id="@+id/drawerLayout"
+       android:background="#E3DADA"
+       android:fitsSystemWindows="true"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <LinearLayout
+
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <androidx.appcompat.widget.Toolbar
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:background="#2196F3"
+             android:id="@+id/toolbarThemMon">
+         </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/size_25dp"
+            android:textColor="#F40101"
+            android:textStyle="bold"
+            android:text="@string/themmonan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageviewAvatarThem"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:src="@drawable/food"
+                android:layout_width="@dimen/size_150dp"
+                android:layout_height="@dimen/size_150dp">
+            </ImageView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textSize="@dimen/size_15sp"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:layout_marginLeft="@dimen/size_50dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#C3BEBE"
+                    android:id="@+id/buttonChupHinh"
+                    android:text="@string/chuphinh"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_150dp"
+                    android:layout_height="wrap_content"></Button>
+
+                <Button
+                    android:textSize="@dimen/size_15sp"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:layout_marginLeft="@dimen/size_50dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#C3BEBE"
+                    android:id="@+id/buttonChonHinh"
+                    android:text="@string/chonhinh"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_150dp"
+                    android:layout_height="wrap_content"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="@dimen/size_10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20sp"
+                android:text="@string/tenmonan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:layout_marginLeft="@dimen/size_14dp"
+                android:id="@+id/editTextTenMonAn"
+                android:hint="@string/nhap_tenmonan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="@dimen/size_10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20sp"
+                android:text="@string/giatien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/size_47dp"
+                android:id="@+id/editTextGiaTien"
+                android:hint="@string/nhap_giatien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+        </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/size_40dp">
+
+              <TextView
+                  android:layout_gravity="center"
+                  android:paddingLeft="@dimen/size_10dp"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/size_20sp"
+                  android:text="@string/loaimonan"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+              </TextView>
+
+              <Spinner
+                  android:id="@+id/spLoaiMonAn"
+                  android:layout_marginLeft="@dimen/size_10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+              </Spinner>
+          </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonThem"
+                android:textColor="@color/black"
+                android:backgroundTint="#D1CBCB"
+                android:layout_marginLeft="@dimen/size_50dp"
+                android:padding="@dimen/size_10dp"
+                android:text="@string/btn_them"
+                android:layout_width="@dimen/size_150dp"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button
+                android:id="@+id/buttonThoat"
+                android:textColor="@color/black"
+                android:backgroundTint="#D1CBCB"
+                android:layout_marginLeft="@dimen/size_50dp"
+                android:padding="@dimen/size_10dp"
+                android:text="@string/btn_thoat"
+                android:layout_width="@dimen/size_150dp"
+                android:layout_height="wrap_content">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+   </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

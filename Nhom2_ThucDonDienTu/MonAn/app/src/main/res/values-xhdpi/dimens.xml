@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="size_5dp">3dp</dimen>
+    <dimen name="size_10dp">8dp</dimen>
+    <dimen name="size_14dp">10dp</dimen>
+    <dimen name="size_15dp">10dp</dimen>
+    <dimen name="size_20dp">15dp</dimen>
+    <dimen name="size_25dp">23dp</dimen>
+    <dimen name="size_30dp">15dp</dimen>
+    <dimen name="size_35dp">30dp</dimen>
+    <dimen name="size_40dp">35dp</dimen>
+    <dimen name="size_47dp">42dp</dimen>
+    <dimen name="size_50dp">40dp</dimen>
+    <dimen name="size_80dp">75dp</dimen>
+    <dimen name="size_125dp">70dp</dimen>
+    <dimen name="size_150dp">120dp</dimen>
+    <dimen name="size_200dp">150dp</dimen>
+    <dimen name="size_250dp">200dp</dimen>
+    <dimen name="size_300dp">295dp</dimen>
+    <dimen name="size_70dp">65dp</dimen>
+    <dimen name="size_15sp">10sp</dimen>
+    <dimen name="size_20sp">15sp</dimen>
+    <dimen name="size_24sp">19sp</dimen>
+    <dimen name="size_25sp">20sp</dimen>
+    <dimen name="size_30sp">24sp</dimen>
+    <dimen name="size_35sp">30sp</dimen>
+    <dimen name="size_180dp">175dp</dimen>
+    <dimen name="size_100dp">95dp</dimen>
+</resources>

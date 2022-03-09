@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnTrangChu"
+        android:enabled="true"
+        android:icon="@drawable/trangchu"
+        android:title="@string/ibtn_home"/>
+    <item
+        android:id="@+id/btnThucDon"
+        android:enabled="true"
+        android:icon="@drawable/menu"
+        android:title="@string/ibtn_monan"/>
+
+    <item
+        android:id="@+id/btnDanhSach"
+        android:enabled="true"
+        android:icon="@drawable/bill_50"
+        android:title="Danh sách Gọi Món"/>
+
+    <item
+        android:id="@+id/btnQuanLy"
+        android:enabled="true"
+        android:icon="@drawable/serve_64"
+        android:title="@string/ibtn_quanly"/>
+
+    <item
+        android:id="@+id/btnThongTin"
+        android:enabled="true"
+        android:icon="@drawable/info_64"
+        android:title="Thông Tin"/>
+
+
+</menu>

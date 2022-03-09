@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDD5D5"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:background="#E3DADA"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2196F3"
+            android:id="@+id/toolbarThanhToan">
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/layouttable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/vien"
+            android:padding="@dimen/size_10dp"
+            android:paddingBottom="@dimen/size_10dp">
+
+            <!-- Table Heading -->
+            <TableRow android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="HÓA ĐƠN"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_50dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="right"
+                    android:text="Số HĐ:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSoHoaDon_ThanhToan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="004"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10sp"
+                    android:text="Bàn: "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtSoBan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="Ngày:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtNgayLapHD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="6"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </TableRow>
+
+            <TableLayout android:background="@drawable/vien">
+
+                <TableRow android:background="@drawable/vien">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/vien"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="Tên món ăn"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/vien"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="SL"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/vien"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="Đơn giá"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/vien"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="TT"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </TableRow>
+
+                <!-- Table Data -->
+
+                <TableRow android:background="@drawable/vien">
+
+                    <TextView
+                        android:id="@+id/txtTenMonAn_ThanhToan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/vien"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="@string/row1Name"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtSoLuong_ThanhToan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/vien"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="@string/row1Age"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtGia_ThanhToan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/vien"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="@string/row1Surname"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtTongTien_ThanhToan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/vien"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="@string/row1Surname"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:text="Số tiền phải trả"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:text="378433"
+                    android:id="@+id/txtSoTienTra"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:text="Số tiền khách đưa"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <EditText
+                    android:id="@+id/txtSoTienDua"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:text="Tiền trả lại cho khách"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:id="@+id/txtTienTraLaiKhach"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <Button
+                    android:layout_marginLeft="@dimen/size_20dp"
+                   android:gravity="center"
+                    android:id="@+id/buttonCapNhapHoaDon"
+                    android:layout_width="@dimen/size_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layouttable"
+                    android:text="Cập nhật"></Button>
+
+                <Button
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:id="@+id/buttonXong"
+                    android:layout_width="@dimen/size_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layouttable"
+                    android:layout_toRightOf="@+id/buttonCapNhapHoaDon"
+                    android:text="Thanh toán"></Button>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

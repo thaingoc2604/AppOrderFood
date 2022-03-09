@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayouttoolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2196F3"
+            app:title="@string/app_name"
+            app:menu="@menu/thong_tin_nguoi_dung"
+            android:id="@+id/toolbar">
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/linearLayoutBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_150dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayouttoolbar">
+
+
+        <ViewFlipper
+            android:id="@+id/viewBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/bg_food"
+                android:id="@+id/imageviewBanner1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ImageView>
+
+            <ImageView
+                android:src="@drawable/bg_com_suon"
+                android:id="@+id/imageviewBanner2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ImageView>
+
+            <ImageView
+                android:src="@drawable/bg_com_tam"
+                android:id="@+id/imageviewBanner3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ImageView>
+        </ViewFlipper>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size_200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CFCACA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBanner"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_200dp"
+                android:layout_marginLeft="@dimen/size_25dp"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/custom_layout">
+
+                <ImageView
+                    android:id="@+id/imageviewIconMonAn"
+                    android:layout_marginTop="@dimen/size_25dp"
+                    android:layout_marginLeft="@dimen/size_35dp"
+                    android:src="@drawable/food"
+                    android:layout_width="@dimen/size_125dp"
+                    android:layout_height="@dimen/size_125dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_20sp"
+                    android:text="@string/ibtn_monan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/size_25dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/custom_layout"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_200dp">
+
+                <ImageView
+                    android:id="@+id/imageviewDatMon"
+                    android:layout_marginTop="@dimen/size_25dp"
+                    android:layout_marginLeft="@dimen/size_35dp"
+                    android:src="@drawable/bill_50"
+                    android:layout_width="@dimen/size_125dp"
+                    android:layout_height="@dimen/size_125dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_20sp"
+                    android:text="@string/ibtn_datmon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_200dp"
+                android:layout_marginLeft="@dimen/size_25dp"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/custom_layout">
+
+                <ImageView
+                    android:id="@+id/imageviewIconQuanLy"
+                    android:layout_marginTop="@dimen/size_25dp"
+                    android:layout_marginLeft="@dimen/size_35dp"
+                    android:src="@drawable/serve_64"
+                    android:layout_width="@dimen/size_125dp"
+                    android:layout_height="@dimen/size_125dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_20sp"
+                    android:text="@string/ibtn_quanly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/size_25dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/custom_layout"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_200dp">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:id="@+id/imageviewInfoApp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/info_64"
+                    android:layout_width="@dimen/size_125dp"
+                    android:layout_height="@dimen/size_125dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_20sp"
+                    android:text="Thông Tin Ứng Dụng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

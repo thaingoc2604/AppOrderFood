@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/size_10dp"
+    android:background="#E3DADA"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:backgroundTint="@color/white"
+        android:background="@drawable/custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewHinh"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="@dimen/size_100dp"
+            android:layout_marginTop="@dimen/size_5dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginTop="@dimen/size_5dp"
+            android:id="@+id/textviewTenMonAnCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_toRightOf="@id/imageViewHinh"
+            android:text="@string/tenmonan"
+            android:textColor="#0d00ff"
+            android:textSize="@dimen/size_24sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textviewGiaCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewTenMonAnCustom"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_toRightOf="@id/imageViewHinh"
+            android:text="@string/giatien"
+            android:textColor="#539308"
+            android:textSize="@dimen/size_24sp"
+            android:textStyle="bold"></TextView>
+
+        <Button
+            android:textSize="@dimen/size_15sp"
+            android:id="@+id/butttonChonMon"
+            android:layout_width="@dimen/size_125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewGiaCustom"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_toRightOf="@id/imageViewHinh"
+            android:backgroundTint="#DC0D0D"
+            android:text="@string/btn_chon"
+            android:textStyle="bold">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_20dp">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="@dimen/size_200dp"
+       android:layout_height="@dimen/size_200dp"
+       android:background="@drawable/custom_layout"
+       android:backgroundTint="#A6A4A4">
+
+       <ImageView
+           android:layout_marginTop="@dimen/size_10dp"
+           android:id="@+id/imageView_loaimonan"
+           android:layout_width="@dimen/size_125dp"
+           android:layout_height="@dimen/size_125dp"
+           app:srcCompat="@drawable/food"
+           android:layout_gravity="center"/>
+
+       <TextView
+           android:gravity="center"
+           android:id="@+id/editText_tenloaimonan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="@dimen/size_20sp"
+           android:textColor="@color/white"
+           android:textStyle="bold"
+           android:layout_marginTop="@dimen/size_10dp"
+           android:layout_gravity="center"
+           android:hint="@string/tenloai"
+            />
+   </LinearLayout>
+</LinearLayout>
